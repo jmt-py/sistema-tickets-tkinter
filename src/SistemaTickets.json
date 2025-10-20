@@ -1,0 +1,45 @@
+{
+    "ticket": [
+        {
+            "id": 0,
+            "descripcion": "bbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "prioridad": "media",
+            "id_usuario": 6,
+            "id_tecnico": 2,
+            "estado": "completado"
+        },
+        {
+            "id": 1,
+            "descripcion": "asssssssssssssssssssssssssssssss",
+            "prioridad": "alta",
+            "id_usuario": 3,
+            "id_tecnico": 3,
+            "estado": "completado"
+        },
+        {
+            "id": 2,
+            "descripcion": "32sdffs",
+            "prioridad": "alta",
+            "id_usuario": 2,
+            "id_tecnico": null,
+            "estado": "completado"
+        },
+        {
+            "id": 3,
+            "descripcion": "aaaaaaaaaaaaaaaa",
+            "prioridad": "media",
+            "id_usuario": 3,
+            "id_tecnico": null,
+            "estado": "pendiente"
+        },
+        {
+            "id": 4,
+            "descripcion": "uuuuuuuuuuuuuu",
+            "prioridad": "media",
+            "id_usuario": 8,
+            "id_tecnico": null,
+            "estado": "pendiente"
+        }
+    ],
+    "contador": 5
+}
