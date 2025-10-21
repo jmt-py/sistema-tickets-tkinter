@@ -1,5 +1,6 @@
-Sistema de tickets en Python, POO, y de almacenamiento persistente en archivos json
-#Funcionalidades:
+#Sistema de tickets en Python, POO, y de almacenamiento persistente en archivos json
+
+##Funcionalidades:
 -Crear, listar, eliminar usuarios y tecnicos
 -Crear y listar tickets
 -Asignar tecnico a ticket
@@ -7,17 +8,17 @@ Sistema de tickets en Python, POO, y de almacenamiento persistente en archivos j
 -Validacion de datos y manejo de errores
 -Persistencia de informacion en archivos json
 
-#Recursos utilizados:
+##Recursos utilizados:
 -Python 3.13
 -Tkinter
 -JSON
 
-#Uso:
+##Uso:
 Ejecutar el programa principal (gui.py) desde la carpera /data
 ```bash
 python data/gui.py
 
-#Estructura:
+##Estructura:
 SistemaTickets/
 ├── data/
 │   ├── main.py

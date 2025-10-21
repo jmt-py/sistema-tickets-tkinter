@@ -395,14 +395,12 @@ def crear_ticket_callback():
         messagebox.showerror("Error", "Prioridad no valida")
         return
 
-    id_usuario = int(id_usuario.split("-")[0].strip())
-
-    if id_usuario not in gestor_usuarios.lista_usuarios:
+    if not any (u.id==idusuario for u in gestor_usuarios.lista_usuarios):
         messagebox.showerror("Error" , "No se encontró un usuario con esa ID")
         return
 
 
-    gestor_tickets.crear_ticket(id_usuario, descripcion, prioridad)
+    gestor_tickets.crear_ticket(idusuario, descripcion, prioridad)
     messagebox.showinfo("Exito", "Ticket generado exitosamente.")
 
     entry_descripcion.delete(0, END)

@@ -48,7 +48,7 @@ class Usuario:
 class GestorUsuarios:
     def __init__(self):
         self.lista_usuarios=[]
-        self.contadorIDU=0
+        self.contadorIDU=1
 
 
     def crear_usuario(self, nombre, email):
@@ -94,7 +94,7 @@ class GestorUsuarios:
     def cargar_usuarios_json(self):
         if not os.path.exists(usuariosJSON) or os.path.getsize(usuariosJSON)==0:
             self.lista_usuarios=[]
-            self.contadorIDU=0
+            self.contadorIDU=1
             return
 
         with open(usuariosJSON, "r") as file:
@@ -185,7 +185,7 @@ class GestorTecnicos:
 
     def __init__(self):
         self.lista_tecnicos=[]
-        self.contadorIDT=0
+        self.contadorIDT=1
 
     def buscar_tecnico(self, id_tecnico):
         for tecnico in self.lista_tecnicos:
@@ -229,7 +229,7 @@ class GestorTecnicos:
     def cargar_json_tecnicos(self):
         if not os.path.exists(tecnicosJSON) or os.path.getsize(tecnicosJSON)==0:
             self.lista_tecnicos=[]
-            self.contadorIDT=0
+            self.contadorIDT=1
             return
         with open(tecnicosJSON, "r")as file:
             datos=json.load(file)
@@ -245,7 +245,7 @@ class GestorTickets:
         self.usuarios = gestor_usuarios
         self.tecnicos = gestor_tecnicos
         self.lista_tickets=[]
-        self.contador=0
+        self.contador=1
 
 
 
@@ -328,7 +328,7 @@ class GestorTickets:
 
     def cargar_json(self):
         if not os.path.exists(archivo) or os.path.getsize(archivo)==0:
-            self.contador=0
+            self.contador=1
             self.lista_tickets=[]
             return
         with open(archivo, "r") as file:
